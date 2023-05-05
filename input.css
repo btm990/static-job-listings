@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.li-item {
+    @apply mx-6 mt-10 mb-8 md:my-6 rounded-[4px] flex flex-col md:flex-row items-center bg-white md:h-32 px-6 py-8 border-primary100 shadow-md shadow-neutral700 relative md:static max-w-6xl md:mx-auto;
+}
+
+.company-img {
+    @apply block md:inline mr-5 w-11 md:w-20 absolute md:static top-[-1.375rem] left-6;
+}
+
+.company-name {
+    @apply text-primary100 font-bold mr-4;
+}
+
+.tag {
+    @apply text-white text-xs uppercase rounded-full box-content h-5 inline-flex items-center px-2;
+}
+
+.card-block {
+    @apply flex my-[0.0625] justify-between flex-wrap;
+}
+
+.position-title {
+    @apply font-bold md:text-lg inline-flex items-center my-2;
+}
+
+.filter-container {
+    @apply flex flex-wrap items-center gap-4 order-1 md:order-[0] pr-6;
+}
+
+.filter-tablet {
+    @apply text-primary100 bg-neutral400 font-semibold h-8 inline-flex items-center box-content px-2;
+}
+
+.post-details {
+    @apply flex gap-3 w-[100%] text-neutral700;
+}
+
+.divider-line {
+    @apply md:hidden w-[100%] my-4 border-neutral-400;
+}
+
+.text-container {
+    @apply inline-block w-[100%];
+}

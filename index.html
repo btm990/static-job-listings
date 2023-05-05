@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Job Listings</title>
+
+</head>
+<body class="bg-neutral100 font-body text-[0.875rem]">
+  <!-- Item Start -->
+  <header class="bg-header-mb md:bg-header-dt bg-primary100 h-[9.75rem]"></header>
+
+  <div class="filter-bar absolute bg-white rounded-[4px] left-[50%] translate-x-[-50%] translate-y-[-50%] md:max-w-6xl max-w-[20.4375rem] w-[100%] flex justify-between items-center p-4 pr-6">
+    <div class="flex flex-wrap gap-y-3 gap-x-11">
+      <!--
+      <span class="filter-tablet relative">Frontend
+        <img class="inline bg-primary100 absolute left-[100%] p-2 " src="images/icon-remove.svg" alt="remove icon">
+      </span>
+      <span class="filter-tablet relative">CSS
+        <img class="inline bg-primary100 absolute left-[100%] p-2 " src="images/icon-remove.svg" alt="remove icon">
+      </span>
+      <span class="filter-tablet relative">JavaScript
+        <img class="inline bg-primary100 absolute left-[100%] p-2 " src="images/icon-remove.svg" alt="remove icon">
+      </span>
+      -->
+    </div>
+    <span class="text-neutral700">Clear</span>
+  </div>
+  
+  <ul class="md:py-9 pt-3"> <!-- grid place-content-center -->
+
+    <li class="li-item border-l-4" data-role="frontend" data-level="senior" data-languages="html css javascript">
+      
+      <img class="company-img" src="/images/photosnap.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">Photosnap</span>
+        <span class="bg-primary100 tag mr-1">New!</span>
+        <span class="bg-neutral900 tag">Featured</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Senior Frontend Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Frontend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Senior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">HTML</span>
+            <span class="filter-tablet">CSS</span>
+            <span class="filter-tablet">JavaScript</span>
+          </div>
+
+          <div class="post-details">
+            <span>1d ago</span>
+            <span>&middot;</span>
+            <span>Full Time</span>
+            <span>&middot;</span>
+            <span>USA only</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+    <li class="li-item border-l-4" data-role="Fullstack" data-level="midweight" data-languages="python" data-tools="react">
+      <!-- Item Start -->
+      <img class="company-img" src="images/manage.svg" alt="company photo">
+      
+      <div class="text-container">
+        <span class="company-name">Manage</span>
+        <span class="bg-primary100 tag mr-1">New!</span>
+        <span class="bg-neutral900 tag">Featured</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Fullstack Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Fullstack</span>
+            <!-- Level -->
+            <span class="filter-tablet">Midweight</span>
+            <!-- Languages -->
+            <span class="filter-tablet">Python</span>
+            <span class="filter-tablet">React</span>
+          </div>
+
+          <div class="post-details">
+            <span>1d ago</span>
+            <span>&middot;</span>
+            <span>Part Time</span>
+            <span>&middot;</span>
+            <span>Remote</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react sass">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/account.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">Account</span>
+        <span class="bg-primary100 tag mr-1">New!</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Junior Frontend Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Frontend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Junior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">React</span>
+            <span class="filter-tablet">Sass</span>
+            <span class="filter-tablet">JavaScript</span>
+          </div>
+
+          <div class="post-details">
+            <span>2d ago</span>
+            <span>&middot;</span>
+            <span>Part Time</span>
+            <span>&middot;</span>
+            <span>USA only</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="frontend" data-level="junior" data-languages="css javascript" data-tools="">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/myhome.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">MyHome</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Junior Frontend Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Frontend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Junior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">CSS</span>
+            <span class="filter-tablet">JavaScript</span>
+          </div>
+
+          <div class="post-details">
+            <span>5d ago</span>
+            <span>&middot;</span>
+            <span>Contract</span>
+            <span>&middot;</span>
+            <span>USA only</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="fullstack" data-level="midweight" data-languages="javascript ruby" data-tools="sass">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/loop-studios.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">Loop Studios</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Software Engineer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Fullstack</span>
+            <!-- Level -->
+            <span class="filter-tablet">Midweight</span>
+            <!-- Languages -->
+            <span class="filter-tablet">JavaScript</span>
+            <span class="filter-tablet">Ruby</span>
+            <span class="filter-tablet">Sass</span>
+          </div>
+
+          <div class="post-details">
+            <span>1w ago</span>
+            <span>&middot;</span>
+            <span>Full Time</span>
+            <span>&middot;</span>
+            <span>Worldwide</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="backend" data-level="junior" data-languages="ruby" data-tools="ror">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/faceit.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">FaceIt</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Junior Backend Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Backend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Junior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">Ruby</span>
+            <span class="filter-tablet">RoR</span>
+          </div>
+
+          <div class="post-details">
+            <span>2w ago</span>
+            <span>&middot;</span>
+            <span>Full Time</span>
+            <span>&middot;</span>
+            <span>UK only</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/shortly.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">Shortly</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Junior Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Frontend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Junior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">HTML</span>
+            <span class="filter-tablet">Sass</span>
+            <span class="filter-tablet">JavaScript</span>
+          </div>
+
+          <div class="post-details">
+            <span>2w ago</span>
+            <span>&middot;</span>
+            <span>Full Time</span>
+            <span>&middot;</span>
+            <span>UK only</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/insure.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">Insure</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Junior Frontend Developer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Frontend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Junior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">Vue</span>
+            <span class="filter-tablet">JavaScript</span>
+            <span class="filter-tablet">Sass</span>
+            
+          </div>
+
+          <div class="post-details">
+            <span>2w ago</span>
+            <span>&middot;</span>
+            <span>Full Time</span>
+            <span>&middot;</span>
+            <span>USA only</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/eyecam-co.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">Eyecam Co.</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Full Stack Engineer</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Fullstack</span>
+            <!-- Level -->
+            <span class="filter-tablet">Midweight</span>
+            <!-- Languages -->
+            <span class="filter-tablet">JavaScript</span>
+            <span class="filter-tablet">Django</span>
+            <span class="filter-tablet">Python</span>
+            
+          </div>
+
+          <div class="post-details">
+            <span>3w ago</span>
+            <span>&middot;</span>
+            <span>Full Time</span>
+            <span>&middot;</span>
+            <span>Worldwide</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+      <!-- Item Start -->
+      <img class="company-img" src="/images/the-air-filter-company.svg" alt="company photo" width="76px">
+      
+      <div class="text-container">
+        <span class="company-name">The Air Filter Company</span>
+        
+        <div class="card-block">
+          
+          <span class="position-title">Front-end Dev</span>
+          
+          <!-- Role -->
+          <div class="filter-container">
+            <span class="filter-tablet">Frontend</span>
+            <!-- Level -->
+            <span class="filter-tablet">Junior</span>
+            <!-- Languages -->
+            <span class="filter-tablet">React</span>
+            <span class="filter-tablet">Sass</span>
+            <span class="filter-tablet">JavaScript</span>
+            
+          </div>
+
+          <div class="post-details">
+            <span>1mo ago</span>
+            <span>&middot;</span>
+            <span>Part Time</span>
+            <span>&middot;</span>
+            <span>Worldwide</span>
+          </div>
+
+          <hr class="divider-line">
+
+        </div>
+        
+      </div>
+      <!-- Item End -->
+    </li>
+  </ul>
+
+</body>
+<script type="module" src="main.js"></script>
+</html>
