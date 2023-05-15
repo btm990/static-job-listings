@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .li-item {
-    @apply mx-6 mt-10 mb-8 md:my-6 rounded-[4px] flex flex-col md:flex-row items-center bg-white md:h-32 px-6 py-8 border-primary100 shadow-md shadow-neutral700 relative md:static max-w-6xl md:mx-auto;
+    @apply mx-6 mt-10 mb-8 md:my-6 rounded-[4px] flex flex-col md:flex-row items-center bg-white md:h-32 px-6 py-8 border-primary100 relative md:static max-w-6xl md:mx-auto;
+    box-shadow: -2px 8px 8px 8px hsla(180, 29%, 50%, 10%);
 }
 
 .company-img {
@@ -26,12 +27,16 @@
     @apply font-bold md:text-lg inline-flex items-center my-2;
 }
 
+.filter-bar {
+    box-shadow: 0 8px 8px 8px hsla(180, 29%, 50%, 12%);
+}
+
 .filter-container {
     @apply flex flex-wrap items-center gap-4 order-1 md:order-[0] pr-6;
 }
 
 .filter-tablet {
-    @apply text-primary100 bg-neutral400 font-semibold h-8 inline-flex items-center box-content px-2;
+    @apply text-primary100 bg-neutral400 font-semibold h-8 inline-flex items-center box-content px-2 hover:bg-primary100 hover:text-neutral100 cursor-pointer rounded-[0.1875rem];
 }
 
 .post-details {

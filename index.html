@@ -18,21 +18,57 @@
   <!-- Item Start -->
   <header class="bg-header-mb md:bg-header-dt bg-primary100 h-[9.75rem]"></header>
 
-  <div id="filter-bar" class="filter-bar absolute bg-white rounded-[4px] left-[50%] translate-x-[-50%] translate-y-[-50%] md:max-w-6xl max-w-[20.4375rem] w-[100%] flex justify-between items-center p-4 pr-6">
-    <div class="flex flex-wrap gap-y-3 gap-x-11">
-      <!--
-      <span class="filter-tablet relative">Frontend
-        <img class="inline bg-primary100 absolute left-[100%] p-2 " src="images/icon-remove.svg" alt="remove icon">
-      </span>
-      <span class="filter-tablet relative">CSS
-        <img class="inline bg-primary100 absolute left-[100%] p-2 " src="images/icon-remove.svg" alt="remove icon">
-      </span>
-      <span class="filter-tablet relative">JavaScript
-        <img class="inline bg-primary100 absolute left-[100%] p-2 " src="images/icon-remove.svg" alt="remove icon">
-      </span>
-      -->
+  <div id="filter-wrapper">
+    <div class="filter-bar absolute bg-white rounded-[4px] left-[50%] translate-x-[-50%] translate-y-[-50%] md:max-w-6xl max-w-[20.4375rem] w-[100%] hidden justify-between gap-2 items-center p-4 pr-6">
+      <div id="filter-bar-items" class="flex flex-wrap gap-y-3 gap-x-11">
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Frontend
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">CSS
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Senior
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">HTML
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">JavaScript
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Fullstack
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Midweight
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Python
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">React
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Junior
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Sass
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Ruby
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Backend
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">RoR
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+        <span class="text-primary100 bg-neutral400 font-semibold h-8 hidden items-center box-content px-2 cursor-pointer relative">Vue
+          <img class="inline bg-primary100 absolute left-[100%] p-2 hover:bg-neutral-950 cursor-pointer" src="images/icon-remove.svg" alt="remove icon">
+        </span>
+      </div>
+      <span id="clear" class="text-neutral700 cursor-pointer hover:text-primary100 hover:underline">Clear</span>
     </div>
-    <span class="text-neutral700">Clear</span>
   </div>
   
   <ul class="md:py-9 pt-3"> <!-- grid place-content-center -->
@@ -76,7 +112,7 @@
       </div>
       <!-- Item End -->
     </li>
-    <li class="li-item border-l-4" data-role="Fullstack" data-level="midweight" data-languages="python" data-tools="react">
+    <li class="li-item border-l-4" data-role="fullstack" data-level="midweight" data-languages="python react" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="images/manage.svg" alt="company photo">
       
@@ -115,7 +151,7 @@
 
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react sass">
+    <li class="li-item" data-role="frontend" data-level="junior" data-languages="javascript react sass" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/account.svg" alt="company photo" width="76px">
       
@@ -190,7 +226,7 @@
       </div>
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="fullstack" data-level="midweight" data-languages="javascript ruby" data-tools="sass">
+    <li class="li-item" data-role="fullstack" data-level="midweight" data-languages="javascript ruby sass" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/loop-studios.svg" alt="company photo" width="76px">
       
@@ -227,7 +263,7 @@
       </div>
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="backend" data-level="junior" data-languages="ruby" data-tools="ror">
+    <li class="li-item" data-role="backend" data-level="junior" data-languages="ruby ror" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/faceit.svg" alt="company photo" width="76px">
       
@@ -264,7 +300,7 @@
 
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+    <li class="li-item" data-role="frontend" data-level="junior" data-languages="html sass javascript" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/shortly.svg" alt="company photo" width="76px">
       
@@ -301,7 +337,7 @@
       </div>
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+    <li class="li-item" data-role="frontend" data-level="junior" data-languages="vue javascript sass" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/insure.svg" alt="company photo" width="76px">
       
@@ -339,7 +375,7 @@
       </div>
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+    <li class="li-item" data-role="fullstack" data-level="midweight" data-languages="javascript django python" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/eyecam-co.svg" alt="company photo" width="76px">
       
@@ -377,7 +413,7 @@
       </div>
       <!-- Item End -->
     </li>
-    <li class="li-item" data-role="" data-level="" data-languages="" data-tools="">
+    <li class="li-item" data-role="frontend" data-level="junior" data-languages="react sass javascript" data-tools="">
       <!-- Item Start -->
       <img class="company-img" src="/images/the-air-filter-company.svg" alt="company photo" width="76px">
       
