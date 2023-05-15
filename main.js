@@ -27,12 +27,6 @@ const reset = () => {
 
 reset()
 
-console.log(listItems)
-
-const capitalize = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1)
-}
-
 const listAction = (filterName) => {
     for (const li of listItems) {
         if (!li.dataset.role.includes(filterName.toLowerCase()) && !li.dataset.level.includes(filterName.toLowerCase()) && !li.dataset.languages.includes(filterName.toLowerCase())) {
@@ -66,7 +60,6 @@ const filterClearAction = (filterName) => {
         }
     }
     if (visibleFiltersCount === 0) {
-        console.log(visibleFiltersCount)
         reset()
     }
     filterWrapper.style.height = `${filterBar.offsetHeight/2}px`
